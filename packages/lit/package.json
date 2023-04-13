@@ -15,5 +15,8 @@
   ],
   "scripts": {
     "test": "node ./__tests__/lit.test.js"
+  },
+  "dependencies": {
+    "lit": "^2.7.2"
   }
 }
