@@ -1,0 +1,19 @@
+{
+  "name": "lit",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "KotaTanaka <te11k.tanaka@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/lit.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "node ./__tests__/lit.test.js"
+  }
+}
