@@ -4,6 +4,13 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "bootstrap": "npx lerna bootstrap",
+    "dev:lit": "npx lerna run --scope lit dev",
+    "dev:react": "npx lerna run --scope react dev",
+    "dev:vue": "npx lerna run --scope vue dev",
+    "build": "npx lerna run build"
+  },
   "devDependencies": {
     "lerna": "^6.6.1"
   }
