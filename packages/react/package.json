@@ -1,19 +1,22 @@
 {
   "name": "react",
+  "private": true,
   "version": "0.0.0",
-  "description": "> TODO: description",
-  "author": "KotaTanaka <te11k.tanaka@gmail.com>",
-  "homepage": "",
-  "license": "ISC",
-  "main": "lib/react.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
-  "files": [
-    "lib"
-  ],
+  "type": "module",
   "scripts": {
-    "test": "node ./__tests__/react.test.js"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^3.1.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.2.0"
   }
 }
