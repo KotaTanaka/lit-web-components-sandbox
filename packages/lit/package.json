@@ -3,18 +3,18 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "main": "dist/my-element.es.js",
+  "main": "dist/index.js",
   "exports": {
-    ".": "./dist/my-element.es.js"
+    ".": {
+      "types": "./dist/@types/index.d.ts",
+      "import": "./dist/index.js"
+    }
   },
-  "types": "types/my-element.d.ts",
-  "files": [
-    "dist",
-    "types"
-  ],
+  "types": "./dist/@types/index.d.ts",
+  "files": ["dist"],
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build"
+    "build": "vite build && tsc"
   },
   "dependencies": {
     "lit": "^2.6.1"
