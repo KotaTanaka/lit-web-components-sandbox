@@ -6,9 +6,9 @@
   ],
   "scripts": {
     "bootstrap": "npx lerna bootstrap",
-    "dev:lit": "npx lerna run --scope lit dev",
-    "dev:react": "npx lerna run --scope react dev",
-    "dev:vue": "npx lerna run --scope vue dev",
+    "dev:lit": "npx lerna run --scope @kotice/lit-web-components-sandbox dev",
+    "dev:react": "npx lerna run --scope @kotice/lit-web-components-sandbox-react dev",
+    "dev:vue": "npx lerna run --scope @kotice/lit-web-components-sandbox-vue dev",
     "build": "npx lerna run build"
   },
   "devDependencies": {
