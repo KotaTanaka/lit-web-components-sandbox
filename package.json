@@ -6,11 +6,14 @@
   ],
   "scripts": {
     "bootstrap": "npx lerna bootstrap",
+    "dev:client": "npx lerna run --scope client dev",
     "dev:lit": "npx lerna run --scope @kotice/lit-web-components-sandbox dev",
     "dev:react": "npx lerna run --scope @kotice/lit-web-components-sandbox-react dev",
     "dev:vue": "npx lerna run --scope @kotice/lit-web-components-sandbox-vue dev",
-    "dev:client": "npx lerna run --scope client dev",
-    "build": "npx lerna run build"
+    "build:lit": "npx lerna run --scope @kotice/lit-web-components-sandbox build",
+    "build:react": "npx lerna run --scope @kotice/lit-web-components-sandbox-react build",
+    "build:vue": "npx lerna run --scope @kotice/lit-web-components-sandbox-vue build",
+    "build:all": "npx lerna run build"
   },
   "devDependencies": {
     "lerna": "^6.6.1"

@@ -14,5 +14,5 @@ pnpm dev:react
 pnpm dev:vue
 
 # Build all app
-pnpm build
+pnpm build:all
 ```
