@@ -1,17 +1,20 @@
 {
   "name": "root",
   "private": true,
+  "engines": {
+    "pnpm": "8.x"
+  },
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
-    "bootstrap": "npx lerna bootstrap",
-    "dev:lit": "npx lerna run --scope lit dev",
-    "dev:react": "npx lerna run --scope react dev",
-    "dev:vue": "npx lerna run --scope vue dev",
-    "build": "npx lerna run build"
-  },
-  "devDependencies": {
-    "lerna": "^6.6.1"
+    "dev:client": "pnpm run --filter client dev",
+    "dev:lit": "pnpm run --filter @kotice/lit-web-components-sandbox dev",
+    "dev:react": "pnpm run --filter @kotice/lit-web-components-sandbox-react dev",
+    "dev:vue": "pnpm run --filter @kotice/lit-web-components-sandbox-vue dev",
+    "build:lit": "pnpm run --filter @kotice/lit-web-components-sandbox build",
+    "build:react": "pnpm run --filter @kotice/lit-web-components-sandbox-react build",
+    "build:vue": "pnpm run --filter @kotice/lit-web-components-sandbox-vue build",
+    "build:all": "pnpm run --filter @kotice/* build"
   }
 }

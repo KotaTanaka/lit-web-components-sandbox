@@ -1,14 +1,25 @@
 {
-  "name": "react",
+  "name": "@kotice/lit-web-components-sandbox-react",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/@types/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "types": "./dist/@types/index.d.ts",
+  "files": ["dist"],
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build && tsc",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@kotice/lit-web-components-sandbox": "^0.0.0",
+    "@lit-labs/react": "^1.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
