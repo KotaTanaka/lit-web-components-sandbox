@@ -3,8 +3,8 @@ import { customElement, property } from 'lit/decorators.js'
 import litLogo from '../assets/lit.svg'
 import viteLogo from '/vite.svg'
 
-@customElement('my-element')
-export class MyElement extends LitElement {
+@customElement('my-example-element')
+export class MyExampleElement extends LitElement {
   @property()
   docsHint = 'Click on the Vite and Lit logos to learn more'
 
@@ -110,6 +110,6 @@ export class MyElement extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'my-element': MyElement
+    'my-example-element': MyExampleElement
   }
 }
