@@ -16,7 +16,7 @@ const App = () => {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h2 className="heading">🌏 コンポーネント一覧</h2>
+      <h2 className="heading">🌏 Components</h2>
       <MySearchInput />
     </div>
   )
