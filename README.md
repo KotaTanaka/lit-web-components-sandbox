@@ -2,17 +2,16 @@
 
 ```sh
 # Install packages
-pnpm bootstrap
+pnpm install
 
-# Run Lit app
+# Run client app
+pnpm dev:client
+
+# Run each library apps
 pnpm dev:lit
-
-# Run React app
 pnpm dev:react
-
-# Run Vue app
 pnpm dev:vue
 
-# Build all app
+# Build all library apps
 pnpm build:all
 ```
