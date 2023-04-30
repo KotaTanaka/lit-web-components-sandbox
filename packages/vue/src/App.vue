@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { MySearchInput } from '@kotice/lit-web-components-sandbox'
 </script>
 
 <template>
@@ -13,6 +14,7 @@
       </a>
     </div>
     <h2 className="heading">🌏 Components</h2>
+    <my-search-input />
   </div>
 </template>
 

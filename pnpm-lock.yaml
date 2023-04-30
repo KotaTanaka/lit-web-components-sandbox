@@ -89,6 +89,9 @@ importers:
 
   packages/vue:
     dependencies:
+      '@kotice/lit-web-components-sandbox':
+        specifier: workspace:^0.0.0
+        version: link:../lit
       vue:
         specifier: ^3.2.47
         version: 3.2.47
