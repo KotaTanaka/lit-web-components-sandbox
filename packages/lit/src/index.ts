@@ -1,1 +1,1 @@
-export { MySearchInput } from './components/lit';
+export { MySearchInput } from './components';
