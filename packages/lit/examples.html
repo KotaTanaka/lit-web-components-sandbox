@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@kotice/lit-web-components-sandbox</title>
+    <link rel="stylesheet" href="./src/assets/globals.css" />
+    <link rel="stylesheet" href="./src/assets/examples.css" />
+    <script type="module" src="/src/examples/playground/01-Basic/hello-world.ts"></script>
+    <script type="module" src="/src/examples/playground/01-Basic/full-component.ts"></script>
+    <script type="module" src="/src/examples/playground/02-ReactiveProperties/basic-properties.ts"></script>
+    <script type="module" src="/src/examples/playground/02-ReactiveProperties/change-detection/my-date-display.ts"></script>
+    <script type="module" src="/src/examples/playground/02-ReactiveProperties/custom-attribute-converter.ts"></script>
+  </head>
+  <body>
+    <h1>Examples</h1>
+    <h3 class="section-title">🎨 BASICS</h3>
+    <div class="container">
+      <p class="label">Hello World</p>
+      <div class="content">
+        <hello-world />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">Full Component</p>
+      <div class="content">
+        <full-component />
+      </div>
+    </div>
+    <h3 class="section-title">🎨 REACTIVE PROPERTIES</h3>
+    <div class="container">
+      <p class="label">Basic properties</p>
+      <div class="content">
+        <basic-properties name="kotice" />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">Change detection</p>
+      <div class="content">
+        <my-date-display />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">Custom attribute converter</p>
+      <div class="content">
+        <custom-attribute-converter date="Oct 20 2021Z-08:00" />
+      </div>
+    </div>
+  </body>
+</html>
