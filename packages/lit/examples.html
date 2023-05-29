@@ -18,6 +18,20 @@
     <script type="module" src="/src/examples/playground/03-TemplateConcepts/slotting-children.ts"></script>
     <script type="module" src="/src/examples/playground/03-TemplateConcepts/element-composition/element-composition.ts"></script>
     <script type="module" src="/src/examples/playground/03-TemplateConcepts/template-composition.ts"></script>
+    <script type="module" src="/src/examples/playground/04-Directives/async-append-directive.ts"></script>
+    <script type="module" src="/src/examples/playground/04-Directives/async-replace-directive.ts"></script>
+    <script type="module" src="/src/examples/playground/04-Directives/cache-directive.ts"></script>
+    <script type="module" src="/src/examples/playground/04-Directives/class-map-directive.ts"></script>
+    <script type="module" src="/src/examples/playground/04-Directives/guard-directive/guard-directive.ts"></script>
+    <script type="module" src="/src/examples/playground/04-Directives/if-defined-directive.ts"></script>
+    <script type="module" src="/src/examples/playground/04-Directives/live-directive.ts"></script>
+    <script type="module" src="/src/examples/playground/04-Directives/ref-directive.ts"></script>
+    <script type="module" src="/src/examples/playground/04-Directives/repeat-directive.ts"></script>
+    <script type="module" src="/src/examples/playground/04-Directives/style-map-directive.ts"></script>
+    <script type="module" src="/src/examples/playground/04-Directives/template-content-directive.ts"></script>
+    <script type="module" src="/src/examples/playground/04-Directives/unsafe-html-directive.ts"></script>
+    <script type="module" src="/src/examples/playground/04-Directives/unsafe-svg-directive.ts"></script>
+    <script type="module" src="/src/examples/playground/04-Directives/until-directive.ts"></script>
   </head>
   <body>
     <h1>Examples</h1>
@@ -79,7 +93,6 @@
         <slotting-children>
           <p style="margin-top: 6px">Render me</p>
         </slotting-children>
-
         <p style="margin-top: 6px">Arbitarily many  children may populate a single slot</p>
         <slotting-children>
           <p style="margin-top: 6px">Render me</p>
@@ -98,6 +111,95 @@
       <p class="label">Template composition</p>
       <div class="content">
         <template-composition />
+      </div>
+    </div>
+    <h3 class="section-title">🎨 DIRECTIVES</h3>
+    <div class="container">
+      <p class="label">asyncAppend directive</p>
+      <div class="content">
+        <async-append-directive />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">asyncReplace directive</p>
+      <div class="content">
+        <async-replace-directive />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">cache directive</p>
+      <div class="content">
+        <cache-directive />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">classMap directive</p>
+      <div class="content">
+        <class-map-directive />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">guard directive</p>
+      <div class="content">
+        <guard-directive />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">ifDefined directive</p>
+      <div class="content">
+        <if-defined-directive />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">live directive</p>
+      <div class="content">
+        <live-directive />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">ref directive</p>
+      <div class="content">
+        <ref-directive />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">repeat directive</p>
+      <div class="content">
+        <repeat-directive />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">styleMap directive</p>
+      <div class="content">
+        <style-map-directive />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">templateContent directive</p>
+      <div class="content">
+        <template id="myContent">
+          <h3>This is content stamped from an HTML &lt;template&gt;!</h3>
+          <img src="https://picsum.photos/id/429/200">
+        </template>
+        <template-content-directive />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">unsafeHTML directive</p>
+      <div class="content">
+        <unsafe-html-directive />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">unsafeSVG directive</p>
+      <div class="content">
+        <unsafe-svg-directive />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">until directive</p>
+      <div class="content">
+        <until-directive />
       </div>
     </div>
   </body>
