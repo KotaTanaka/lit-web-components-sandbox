@@ -2,7 +2,7 @@ import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
 @customElement('custom-attribute-converter')
-class CustomAttributeConverter extends LitElement {
+export class CustomAttributeConverter extends LitElement {
   @property({
     converter: (attrValue: string | null) => {
       if (attrValue)

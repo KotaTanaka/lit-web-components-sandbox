@@ -3,8 +3,8 @@ import { customElement, property } from 'lit/decorators.js';
 import { localDateFromUTC } from './date-utils.js';
 import './date-display.js';
 
-@customElement('my-date-display')
-class MyDateDisplay extends LitElement {
+@customElement('change-detection')
+class ChangeDetection extends LitElement {
   @property() date?: Date;
 
   render() {
@@ -30,6 +30,6 @@ class MyDateDisplay extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'my-date-display': MyDateDisplay
+    'change-detection': ChangeDetection
   }
 }

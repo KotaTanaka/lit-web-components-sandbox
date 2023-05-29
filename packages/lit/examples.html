@@ -10,8 +10,14 @@
     <script type="module" src="/src/examples/playground/01-Basic/hello-world.ts"></script>
     <script type="module" src="/src/examples/playground/01-Basic/full-component.ts"></script>
     <script type="module" src="/src/examples/playground/02-ReactiveProperties/basic-properties.ts"></script>
-    <script type="module" src="/src/examples/playground/02-ReactiveProperties/change-detection/my-date-display.ts"></script>
+    <script type="module" src="/src/examples/playground/02-ReactiveProperties/change-detection/change-detection.ts"></script>
     <script type="module" src="/src/examples/playground/02-ReactiveProperties/custom-attribute-converter.ts"></script>
+    <script type="module" src="/src/examples/playground/03-TemplateConcepts/expression-types.ts"></script>
+    <script type="module" src="/src/examples/playground/03-TemplateConcepts/conditional-templates.ts"></script>
+    <script type="module" src="/src/examples/playground/03-TemplateConcepts/repeating-templates.ts"></script>
+    <script type="module" src="/src/examples/playground/03-TemplateConcepts/slotting-children.ts"></script>
+    <script type="module" src="/src/examples/playground/03-TemplateConcepts/element-composition/element-composition.ts"></script>
+    <script type="module" src="/src/examples/playground/03-TemplateConcepts/template-composition.ts"></script>
   </head>
   <body>
     <h1>Examples</h1>
@@ -38,13 +44,60 @@
     <div class="container">
       <p class="label">Change detection</p>
       <div class="content">
-        <my-date-display />
+        <change-detection />
       </div>
     </div>
     <div class="container">
       <p class="label">Custom attribute converter</p>
       <div class="content">
         <custom-attribute-converter date="Oct 20 2021Z-08:00" />
+      </div>
+    </div>
+    <h3 class="section-title">🎨 TEMPLATE CONCEPTS</h3>
+    <div class="container">
+      <p class="label">Expression types</p>
+      <div class="content">
+        <expression-types />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">Conditional templates</p>
+      <div class="content">
+        <conditional-templates />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">Repeating templates</p>
+      <div class="content">
+        <repeating-templates />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">Slotting children</p>
+      <div class="content">
+        <p>Use the <code>slot</code> element to render children</p>
+        <slotting-children>
+          <p style="margin-top: 6px">Render me</p>
+        </slotting-children>
+
+        <p style="margin-top: 6px">Arbitarily many  children may populate a single slot</p>
+        <slotting-children>
+          <p style="margin-top: 6px">Render me</p>
+          <p style="margin-top: 6px">Me too</p>
+          <p style="margin-top: 6px">Me three</p>
+        </slotting-children>
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">Element composition</p>
+      <div class="content">
+        <element-composition />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">Template composition</p>
+      <div class="content">
+        <template-composition />
       </div>
     </div>
   </body>

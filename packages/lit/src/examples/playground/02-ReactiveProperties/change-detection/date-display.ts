@@ -3,7 +3,7 @@ import { customElement, property, query } from 'lit/decorators.js';
 import { isSameDate } from './date-utils';
 
 @customElement('date-display')
-class DateDisplay extends LitElement {
+export class DateDisplay extends LitElement {
   @property({
     hasChanged: (value?: Date, oldValue?: Date) => {
       return !isSameDate(value, oldValue);
