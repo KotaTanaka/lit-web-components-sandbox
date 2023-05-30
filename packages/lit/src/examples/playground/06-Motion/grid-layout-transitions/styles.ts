@@ -2,6 +2,10 @@ import { css } from 'lit';
 
 export const styles = [
   css`
+    :host {
+      position: relative;
+    }
+
     .container {
       display: grid;
       height: 480px;
