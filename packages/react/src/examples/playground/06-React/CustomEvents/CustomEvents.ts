@@ -4,7 +4,7 @@ import { CustomEvents as CustomEventsWC } from '@kotice/lit-web-components-sandb
 
 export const CustomEvents = createComponent({
   react: React,
-  tagName: 'react-events',
+  tagName: 'custom-events',
   elementClass: CustomEventsWC,
   events: { onSecretMessage: 'secret-message' as EventName<CustomEvent<string>> }
 });
