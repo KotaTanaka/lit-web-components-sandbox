@@ -1,1 +1,2 @@
-export { MySearchInput } from './components';
+export * from './components';
+export * from './examples';
