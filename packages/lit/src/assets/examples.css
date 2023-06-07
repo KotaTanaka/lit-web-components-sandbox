@@ -1,0 +1,28 @@
+:root {
+  background-color: rgba(255, 255, 255, 0.87);
+  color: #242424;
+  padding: 8px;
+  letter-spacing: 1px;
+}
+
+.section-title {
+  margin-bottom: 16px;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.container {
+  min-height: 64px;
+  margin: 0 8px 16px;
+}
+
+.label {
+  padding: 4px;
+  color: #fff;
+  background: #333;
+  border-radius: 4px;
+}
+
+.content {
+  padding: 8px;
+}

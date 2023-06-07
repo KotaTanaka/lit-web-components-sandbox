@@ -17,6 +17,7 @@ export class MyApp extends LitElement {
         </a>
       </div>
       <h2 class="heading">🌏 Components</h2>
+      <a href="examples.html">Examples</a>
       <slot></slot>
     `
   }
@@ -58,6 +59,10 @@ export class MyApp extends LitElement {
     
     h1, h2, p {
       margin: 0;
+    }
+
+    a {
+      color: #fff;
     }
   `
 }

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@kotice/lit-web-components-sandbox</title>
+    <link rel="stylesheet" href="./src/assets/globals.css" />
+    <link rel="stylesheet" href="./src/assets/examples.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons&display=block"
+      rel="stylesheet"
+    />
+    <script type="module" src="/src/examples/playground/01-Basic/hello-world.ts"></script>
+    <script type="module" src="/src/examples/playground/01-Basic/full-component.ts"></script>
+    <script type="module" src="/src/examples/playground/02-ReactiveProperties/basic-properties.ts"></script>
+    <script type="module" src="/src/examples/playground/02-ReactiveProperties/change-detection/change-detection.ts"></script>
+    <script type="module" src="/src/examples/playground/02-ReactiveProperties/custom-attribute-converter.ts"></script>
+    <script type="module" src="/src/examples/playground/03-TemplateConcepts/expression-types.ts"></script>
+    <script type="module" src="/src/examples/playground/03-TemplateConcepts/conditional-templates.ts"></script>
+    <script type="module" src="/src/examples/playground/03-TemplateConcepts/repeating-templates.ts"></script>
+    <script type="module" src="/src/examples/playground/03-TemplateConcepts/slotting-children.ts"></script>
+    <script type="module" src="/src/examples/playground/03-TemplateConcepts/element-composition/element-composition.ts"></script>
+    <script type="module" src="/src/examples/playground/03-TemplateConcepts/template-composition.ts"></script>
+    <script type="module" src="/src/examples/playground/04-Directives/async-append-directive.ts"></script>
+    <script type="module" src="/src/examples/playground/04-Directives/async-replace-directive.ts"></script>
+    <script type="module" src="/src/examples/playground/04-Directives/cache-directive.ts"></script>
+    <script type="module" src="/src/examples/playground/04-Directives/class-map-directive.ts"></script>
+    <script type="module" src="/src/examples/playground/04-Directives/guard-directive/guard-directive.ts"></script>
+    <script type="module" src="/src/examples/playground/04-Directives/if-defined-directive.ts"></script>
+    <script type="module" src="/src/examples/playground/04-Directives/live-directive.ts"></script>
+    <script type="module" src="/src/examples/playground/04-Directives/ref-directive.ts"></script>
+    <script type="module" src="/src/examples/playground/04-Directives/repeat-directive.ts"></script>
+    <script type="module" src="/src/examples/playground/04-Directives/style-map-directive.ts"></script>
+    <script type="module" src="/src/examples/playground/04-Directives/template-content-directive.ts"></script>
+    <script type="module" src="/src/examples/playground/04-Directives/unsafe-html-directive.ts"></script>
+    <script type="module" src="/src/examples/playground/04-Directives/unsafe-svg-directive.ts"></script>
+    <script type="module" src="/src/examples/playground/04-Directives/until-directive.ts"></script>
+    <script type="module" src="/src/examples/playground/06-Motion/sliding-circle.ts"></script>
+    <script type="module" src="/src/examples/playground/06-Motion/lit-logo-animation/lit-logo-animation.ts"></script>
+    <script type="module" src="/src/examples/playground/06-Motion/list-item-animation/list-item-animation.ts"></script>
+    <script type="module" src="/src/examples/playground/06-Motion/grid-layout-transitions/grid-layout-transitions.ts"></script>
+    <script type="module" src="/src/examples/playground/06-Motion/carousel-transitions/carousel-transitions.ts"></script>
+    <script type="module" src="/src/examples/playground/06-Motion/list-detail-hero-transition/list-detail-hero-transition.ts"></script>
+    <script type="module" src="/src/examples/playground/06-Motion/todos-list-transitions/todos-list-transitions.ts"></script>
+  </head>
+  <body>
+    <h1>Examples</h1>
+    <h3 class="section-title">🎨 BASICS</h3>
+    <div class="container">
+      <p class="label">Hello World</p>
+      <div class="content">
+        <my-hello-world />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">Full Component</p>
+      <div class="content">
+        <my-full-component />
+      </div>
+    </div>
+    <h3 class="section-title">🎨 REACTIVE PROPERTIES</h3>
+    <div class="container">
+      <p class="label">Basic properties</p>
+      <div class="content">
+        <my-basic-properties name="kotice" />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">Change detection</p>
+      <div class="content">
+        <my-change-detection />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">Custom attribute converter</p>
+      <div class="content">
+        <my-custom-attribute-converter date="Oct 20 2021Z-08:00" />
+      </div>
+    </div>
+    <h3 class="section-title">🎨 TEMPLATE CONCEPTS</h3>
+    <div class="container">
+      <p class="label">Expression types</p>
+      <div class="content">
+        <my-expression-types />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">Conditional templates</p>
+      <div class="content">
+        <my-conditional-templates />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">Repeating templates</p>
+      <div class="content">
+        <my-repeating-templates />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">Slotting children</p>
+      <div class="content">
+        <p>Use the <code>slot</code> element to render children</p>
+        <my-slotting-children>
+          <p style="margin-top: 6px">Render me</p>
+        </my-slotting-children>
+        <p style="margin-top: 6px">Arbitarily many  children may populate a single slot</p>
+        <my-slotting-children>
+          <p style="margin-top: 6px">Render me</p>
+          <p style="margin-top: 6px">Me too</p>
+          <p style="margin-top: 6px">Me three</p>
+        </my-slotting-children>
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">Element composition</p>
+      <div class="content">
+        <my-element-composition />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">Template composition</p>
+      <div class="content">
+        <my-template-composition />
+      </div>
+    </div>
+    <h3 class="section-title">🎨 DIRECTIVES</h3>
+    <div class="container">
+      <p class="label">asyncAppend directive</p>
+      <div class="content">
+        <my-async-append-directive />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">asyncReplace directive</p>
+      <div class="content">
+        <my-async-replace-directive />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">cache directive</p>
+      <div class="content">
+        <my-cache-directive />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">classMap directive</p>
+      <div class="content">
+        <my-class-map-directive />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">guard directive</p>
+      <div class="content">
+        <my-guard-directive />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">ifDefined directive</p>
+      <div class="content">
+        <my-if-defined-directive />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">live directive</p>
+      <div class="content">
+        <my-live-directive />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">ref directive</p>
+      <div class="content">
+        <my-ref-directive />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">repeat directive</p>
+      <div class="content">
+        <my-repeat-directive />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">styleMap directive</p>
+      <div class="content">
+        <my-style-map-directive />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">templateContent directive</p>
+      <div class="content">
+        <template id="myContent">
+          <h3>This is content stamped from an HTML &lt;template&gt;!</h3>
+          <img src="https://picsum.photos/id/429/200">
+        </template>
+        <my-template-content-directive />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">unsafeHTML directive</p>
+      <div class="content">
+        <my-unsafe-html-directive />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">unsafeSVG directive</p>
+      <div class="content">
+        <my-unsafe-svg-directive />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">until directive</p>
+      <div class="content">
+        <my-until-directive />
+      </div>
+    </div>
+    <h3 class="section-title">🎨 React</h3>
+    <p>Check @kotice/lit-web-components-sandbox-react</p>
+    <h3 class="section-title">🎨 Motion</h3>
+    <div class="container">
+      <p class="label">Sliding Circle</p>
+      <div class="content">
+        <my-sliding-circle />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">Lit Logo Animation</p>
+      <div class="content">
+        <my-lit-logo-animation />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">List Item Animation</p>
+      <div class="content">
+        <my-list-item-animation />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">Grid Layout Transitions</p>
+      <div class="content">
+        <my-grid-layout-transitions />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">Carousel Transitions</p>
+      <div class="content">
+        <my-carousel-transitions />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">List/Detail Hero Transition</p>
+      <div class="content">
+        <my-list-detail-hero-transition />
+      </div>
+    </div>
+    <div class="container">
+      <p class="label">Todos List Transitions</p>
+      <div class="content">
+        <my-todos-list-transitions />
+      </div>
+    </div>
+  </body>
+</html>
