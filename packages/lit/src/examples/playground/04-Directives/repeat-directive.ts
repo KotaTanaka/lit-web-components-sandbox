@@ -2,7 +2,7 @@ import { LitElement, html } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';
 
-@customElement('repeat-directive')
+@customElement('my-repeat-directive')
 class RepeatDirective extends LitElement {
 
   @state()
@@ -43,6 +43,6 @@ class RepeatDirective extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'repeat-directive': RepeatDirective
+    'my-repeat-directive': RepeatDirective
   }
 }

@@ -2,7 +2,7 @@ import { LitElement, html, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';
 
-@customElement('class-map-directive')
+@customElement('my-class-map-directive')
 export class ClassMapDirective extends LitElement {
   @property({ type: Boolean })
   enabled = true;
@@ -54,6 +54,6 @@ export class ClassMapDirective extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'class-map-directive': ClassMapDirective
+    'my-class-map-directive': ClassMapDirective
   }
 }

@@ -1,7 +1,7 @@
 import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
-@customElement('basic-properties')
+@customElement('my-basic-properties')
 export class BasicProperties extends LitElement {
   @property()
   name?: string;
@@ -15,6 +15,6 @@ export class BasicProperties extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'basic-properties': BasicProperties
+    'my-basic-properties': BasicProperties
   }
 }

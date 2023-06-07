@@ -9,7 +9,7 @@ async function *tossCoins(count: number) {
   }
 }
 
-@customElement('async-append-directive')
+@customElement('my-async-append-directive')
 class AsyncAppendDirective extends LitElement {
   @state()
   private tosses = tossCoins(10);
@@ -23,6 +23,6 @@ class AsyncAppendDirective extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'async-append-directive': AsyncAppendDirective
+    'my-async-append-directive': AsyncAppendDirective
   }
 }

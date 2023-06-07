@@ -10,7 +10,7 @@ import {
 import { onFrames, data, DataItem } from './support.js';
 import { styles } from './styles.js';
 
-@customElement('list-detail-hero-transition')
+@customElement('my-list-detail-hero-transition')
 export class ListDetailHeroTransition extends LitElement {
   static styles = styles;
 
@@ -146,6 +146,6 @@ export class ListDetailHeroTransition extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'list-detail-hero-transition': ListDetailHeroTransition
+    'my-list-detail-hero-transition': ListDetailHeroTransition
   }
 }

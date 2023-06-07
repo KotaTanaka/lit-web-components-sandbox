@@ -3,7 +3,7 @@ import { customElement, property } from 'lit/decorators.js';
 import { animate, AnimateController, flyBelow, fade } from '@lit-labs/motion';
 import { styles } from './styles.js';
 
-@customElement('lit-logo-animation')
+@customElement('my-lit-logo-animation')
 export class LitLogoAnimation extends LitElement {
   static styles = styles;
 
@@ -62,6 +62,6 @@ export class LitLogoAnimation extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'lit-logo-animation': LitLogoAnimation
+    'my-lit-logo-animation': LitLogoAnimation
   }
 }

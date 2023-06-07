@@ -1,7 +1,7 @@
 import { LitElement, css, html } from 'lit';
 import { customElement } from 'lit/decorators.js';
 
-@customElement('slotting-children')
+@customElement('my-slotting-children')
 export class SlottingChildren extends LitElement {
   render() {
     return html`
@@ -22,6 +22,6 @@ export class SlottingChildren extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'slotting-children': SlottingChildren
+    'my-slotting-children': SlottingChildren
   }
 }

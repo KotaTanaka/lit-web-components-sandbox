@@ -1,7 +1,7 @@
 import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
-@customElement('template-composition')
+@customElement('my-template-composition')
 export class TemplateComposition extends LitElement {
   @property({ attribute: false })
   article = {
@@ -30,6 +30,6 @@ export class TemplateComposition extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'template-composition': TemplateComposition
+    'my-template-composition': TemplateComposition
   }
 }

@@ -2,7 +2,7 @@ import { LitElement, html, PropertyValues} from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { isSameDate } from './date-utils';
 
-@customElement('date-display')
+@customElement('my-date-display')
 export class DateDisplay extends LitElement {
   @property({
     hasChanged: (value?: Date, oldValue?: Date) => {
@@ -35,6 +35,6 @@ export class DateDisplay extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'date-display': DateDisplay
+    'my-date-display': DateDisplay
   }
 }

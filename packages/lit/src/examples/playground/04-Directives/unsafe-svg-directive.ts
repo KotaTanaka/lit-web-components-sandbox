@@ -4,7 +4,7 @@ import { unsafeSVG } from 'lit/directives/unsafe-svg.js';
 
 const svg = '<circle cx="50" cy="50" r="40" fill="red" />';
 
-@customElement('unsafe-svg-directive')
+@customElement('my-unsafe-svg-directive')
 class UnsafeSVGDirective extends LitElement {
 
   render() {
@@ -21,6 +21,6 @@ class UnsafeSVGDirective extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'unsafe-svg-directive': UnsafeSVGDirective
+    'my-unsafe-svg-directive': UnsafeSVGDirective
   }
 }

@@ -4,7 +4,7 @@ import { animate } from '@lit-labs/motion';
 import { styleMap } from 'lit/directives/style-map.js';
 import { styles } from './styles.js';
 
-@customElement('carousel-transitions')
+@customElement('my-carousel-transitions')
 export class CarouselTransitions extends LitElement {
   static styles = styles;
   @property({ type: Number }) selected = 0;
@@ -55,6 +55,6 @@ export class CarouselTransitions extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'carousel-transitions': CarouselTransitions
+    'my-carousel-transitions': CarouselTransitions
   }
 }

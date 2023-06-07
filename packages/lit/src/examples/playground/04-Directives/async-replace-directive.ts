@@ -9,7 +9,7 @@ async function *countDown(count: number) {
   }
 }
 
-@customElement('async-replace-directive')
+@customElement('my-async-replace-directive')
 class AsyncReplaceDirective extends LitElement {
 
   @state()
@@ -24,6 +24,6 @@ class AsyncReplaceDirective extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'async-replace-directive': AsyncReplaceDirective
+    'my-async-replace-directive': AsyncReplaceDirective
   }
 }

@@ -3,7 +3,7 @@ import { customElement, property } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';
 import { animate } from '@lit-labs/motion';
 
-@customElement('sliding-circle')
+@customElement('my-sliding-circle')
 export class SlidingCircle extends LitElement {
   @property({ type: Boolean }) slid = false;
 
@@ -34,6 +34,6 @@ export class SlidingCircle extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'sliding-circle': SlidingCircle
+    'my-sliding-circle': SlidingCircle
   }
 }

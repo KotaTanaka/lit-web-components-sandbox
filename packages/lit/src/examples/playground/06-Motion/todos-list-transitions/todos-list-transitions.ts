@@ -23,7 +23,7 @@ const data = [
 
 type DataItem = typeof data[number];
 
-@customElement('todos-list-transitions')
+@customElement('my-todos-list-transitions')
 export class TodosListTransitions extends LitElement {
   static styles = styles;
 
@@ -117,6 +117,6 @@ export class TodosListTransitions extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'todos-list-transitions': TodosListTransitions
+    'my-todos-list-transitions': TodosListTransitions
   }
 }

@@ -4,7 +4,7 @@ import { unsafeHTML } from 'lit/directives/unsafe-html.js';
 
 const markup = '<h3>Some HTML to render.</h3>';
 
-@customElement('unsafe-html-directive')
+@customElement('my-unsafe-html-directive')
 class UnsafeHTMLDirective extends LitElement {
 
   render() {
@@ -18,6 +18,6 @@ class UnsafeHTMLDirective extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'unsafe-html-directive': UnsafeHTMLDirective
+    'my-unsafe-html-directive': UnsafeHTMLDirective
   }
 }

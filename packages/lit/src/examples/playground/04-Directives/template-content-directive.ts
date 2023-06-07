@@ -4,7 +4,7 @@ import { templateContent } from 'lit/directives/template-content.js';
 
 const templateEl = document.querySelector('template#myContent') as HTMLTemplateElement;
 
-@customElement('template-content-directive')
+@customElement('my-template-content-directive')
 class TemplateContentDirective extends LitElement {
 
   render() {
@@ -18,6 +18,6 @@ class TemplateContentDirective extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'template-content-directive': TemplateContentDirective
+    'my-template-content-directive': TemplateContentDirective
   }
 }

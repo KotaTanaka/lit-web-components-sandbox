@@ -1,7 +1,7 @@
 import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
-@customElement('expression-types')
+@customElement('my-expression-types')
 export class ExpressionTypes extends LitElement {
   @property()
   bodyText = 'Text in child expression.';
@@ -46,6 +46,6 @@ export class ExpressionTypes extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'expression-types': ExpressionTypes
+    'my-expression-types': ExpressionTypes
   }
 }

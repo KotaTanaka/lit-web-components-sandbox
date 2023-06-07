@@ -3,7 +3,7 @@ import { customElement, state, query } from 'lit/decorators.js';
 import { guard } from 'lit/directives/guard.js';
 import { calculateSHA } from './calculate-sha.js';
 
-@customElement('guard-directive')
+@customElement('my-guard-directive')
 export class GuardDirective extends LitElement {
   @state()
   private value: string = 'test string';
@@ -41,6 +41,6 @@ export class GuardDirective extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'guard-directive': GuardDirective
+    'my-guard-directive': GuardDirective
   }
 }

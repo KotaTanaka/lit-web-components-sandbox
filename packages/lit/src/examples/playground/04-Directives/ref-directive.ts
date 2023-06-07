@@ -4,7 +4,7 @@ import { ref, createRef, Ref } from 'lit/directives/ref.js';
 
 const loremIpsum = Array(100).fill(0).map(() => 'Lorem ipsum dolor sit amet.').join(' ');
 
-@customElement('ref-directive')
+@customElement('my-ref-directive')
 export class RefDirective extends LitElement {
   inputRef: Ref<HTMLInputElement> = createRef<HTMLInputElement>();
 
@@ -43,6 +43,6 @@ export class RefDirective extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'ref-directive': RefDirective
+    'my-ref-directive': RefDirective
   }
 }

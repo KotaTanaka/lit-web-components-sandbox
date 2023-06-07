@@ -2,7 +2,7 @@ import { LitElement, html } from 'lit';
 import { customElement, state, query } from 'lit/decorators.js';
 import { live } from 'lit/directives/live.js';
 
-@customElement('live-directive')
+@customElement('my-live-directive')
 class LiveDirective extends LitElement {
   @state()
   private data = { value: 'test' };
@@ -34,6 +34,6 @@ class LiveDirective extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'live-directive': LiveDirective
+    'my-live-directive': LiveDirective
   }
 }

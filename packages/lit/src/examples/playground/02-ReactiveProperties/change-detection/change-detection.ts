@@ -3,7 +3,7 @@ import { customElement, property } from 'lit/decorators.js';
 import { localDateFromUTC } from './date-utils.js';
 import './date-display.js';
 
-@customElement('change-detection')
+@customElement('my-change-detection')
 class ChangeDetection extends LitElement {
   @property() date?: Date;
 
@@ -12,7 +12,7 @@ class ChangeDetection extends LitElement {
       <p>Choose a date:
       <input type="date" @change=${this._dateChanged}></p>
       <p><button @click=${this._chooseToday}>Choose Today</button></p>
-      <p>Date chosen: <date-display .date=${this.date}></date-display></p>
+      <p>Date chosen: <my-date-display .date=${this.date}></my-date-display></p>
     `;
   }
 
@@ -30,6 +30,6 @@ class ChangeDetection extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'change-detection': ChangeDetection
+    'my-change-detection': ChangeDetection
   }
 }

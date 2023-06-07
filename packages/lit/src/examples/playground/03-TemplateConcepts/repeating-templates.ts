@@ -1,7 +1,7 @@
 import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
-@customElement('repeating-templates')
+@customElement('my-repeating-templates')
 export class RepeatingTemplates extends LitElement {
   @property()
   list = ['Peas', 'Carrots', 'Tomatoes'];
@@ -22,6 +22,6 @@ export class RepeatingTemplates extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'repeating-templates': RepeatingTemplates
+    'my-repeating-templates': RepeatingTemplates
   }
 }

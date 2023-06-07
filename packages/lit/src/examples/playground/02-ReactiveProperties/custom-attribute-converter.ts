@@ -1,7 +1,7 @@
 import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
-@customElement('custom-attribute-converter')
+@customElement('my-custom-attribute-converter')
 export class CustomAttributeConverter extends LitElement {
   @property({
     converter: (attrValue: string | null) => {
@@ -29,6 +29,6 @@ export class CustomAttributeConverter extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'custom-attribute-converter': CustomAttributeConverter
+    'my-custom-attribute-converter': CustomAttributeConverter
   }
 }

@@ -1,7 +1,7 @@
 import { html, css, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
-@customElement('hello-world')
+@customElement('my-hello-world')
 export class HelloWorld extends LitElement {
   @property()
   name = 'kotice';
@@ -21,6 +21,6 @@ export class HelloWorld extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'hello-world': HelloWorld
+    'my-hello-world': HelloWorld
   }
 }

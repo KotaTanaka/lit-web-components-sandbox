@@ -9,7 +9,7 @@ const fetchData = async () => {
   return json.title;
 }
 
-@customElement('until-directive')
+@customElement('my-until-directive')
 class UntilDirective extends LitElement {
   @state()
   private content: Promise<string> = fetchData();
@@ -24,6 +24,6 @@ class UntilDirective extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'until-directive': UntilDirective
+    'my-until-directive': UntilDirective
   }
 }

@@ -3,7 +3,7 @@ import { customElement, state } from 'lit/decorators.js';
 import { animate } from '@lit-labs/motion';
 import { styles } from './styles.js';
 
-@customElement('grid-layout-transitions')
+@customElement('my-grid-layout-transitions')
 export class GridLayoutTransitions extends LitElement {
   static styles = styles;
 
@@ -35,6 +35,6 @@ export class GridLayoutTransitions extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'grid-layout-transitions': GridLayoutTransitions
+    'my-grid-layout-transitions': GridLayoutTransitions
   }
 }

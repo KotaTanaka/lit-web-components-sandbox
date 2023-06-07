@@ -1,7 +1,7 @@
 import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
-@customElement('conditional-templates')
+@customElement('my-conditional-templates')
 export class ConditionalTemplates extends LitElement {
   @property()
   condition = true;
@@ -27,6 +27,6 @@ export class ConditionalTemplates extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'conditional-templates': ConditionalTemplates
+    'my-conditional-templates': ConditionalTemplates
   }
 }

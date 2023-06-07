@@ -5,7 +5,7 @@ import { cache } from 'lit/directives/cache.js';
 const view1 = () => html`View 1: <input value="edit me then toggle">`;
 const view2 = () => html`View 2: <input value="edit me then toggle">`;
 
-@customElement('cache-directive')
+@customElement('my-cache-directive')
 export class CacheDirective extends LitElement {
   @property({ type: Number })
   selectedView = 1;
@@ -31,6 +31,6 @@ export class CacheDirective extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'cache-directive': CacheDirective
+    'my-cache-directive': CacheDirective
   }
 }

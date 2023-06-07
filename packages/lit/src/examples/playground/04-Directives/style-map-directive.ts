@@ -2,7 +2,7 @@ import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';
 
-@customElement('style-map-directive')
+@customElement('my-style-map-directive')
 export class StyleDirective extends LitElement {
   @property({ type: Boolean })
   enabled = true;
@@ -42,6 +42,6 @@ export class StyleDirective extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'style-map-directive': StyleDirective
+    'my-style-map-directive': StyleDirective
   }
 }

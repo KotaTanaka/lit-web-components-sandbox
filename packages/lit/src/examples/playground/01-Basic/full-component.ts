@@ -1,7 +1,7 @@
 import { LitElement, html, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
-@customElement('full-component')
+@customElement('my-full-component')
 export class FullComponent extends LitElement {
   @property()
   greeting = 'Hello';
@@ -37,6 +37,6 @@ export class FullComponent extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'full-component': FullComponent
+    'my-full-component': FullComponent
   }
 }

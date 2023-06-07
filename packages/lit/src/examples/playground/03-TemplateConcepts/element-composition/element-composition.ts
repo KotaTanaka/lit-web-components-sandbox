@@ -5,7 +5,7 @@ import './my-header.js';
 import './my-article.js';
 import './my-footer.js';
 
-@customElement('element-composition')
+@customElement('my-element-composition')
 class ElementComposition extends LitElement {
   render() {
     return html`
@@ -19,6 +19,6 @@ class ElementComposition extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'element-composition': ElementComposition
+    'my-element-composition': ElementComposition
   }
 }

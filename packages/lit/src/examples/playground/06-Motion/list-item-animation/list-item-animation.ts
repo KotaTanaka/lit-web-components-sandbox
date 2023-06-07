@@ -5,7 +5,7 @@ import { classMap } from 'lit/directives/class-map.js';
 import { animate, flyBelow, fadeIn } from '@lit-labs/motion';
 import { styles } from './styles.js';
 
-@customElement('list-item-animation')
+@customElement('my-list-item-animation')
 export class ListItemAnimation extends LitElement {
   static styles = styles;
 
@@ -68,6 +68,6 @@ export class ListItemAnimation extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'list-item-animation': ListItemAnimation
+    'my-list-item-animation': ListItemAnimation
   }
 }

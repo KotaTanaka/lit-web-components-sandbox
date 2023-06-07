@@ -10,7 +10,7 @@ const imageInfo = {
 
 type ImageKey = keyof typeof imageInfo;
 
-@customElement('if-defined-directive')
+@customElement('my-if-defined-directive')
 class IfDefinedDirective extends LitElement {
   @state()
   private imageName: ImageKey = 'beach';
@@ -42,6 +42,6 @@ class IfDefinedDirective extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'if-defined-directive': IfDefinedDirective
+    'my-if-defined-directive': IfDefinedDirective
   }
 }
