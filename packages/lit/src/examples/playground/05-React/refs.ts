@@ -23,7 +23,7 @@ const styles = css`
   }
 `;
 
-@customElement('refs')
+@customElement('my-refs')
 export class Refs extends LitElement {
   static styles = styles;
 
@@ -221,6 +221,6 @@ const drawScene = (
 
 declare global {
   interface HTMLElementTagNameMap {
-    'refs': Refs
+    'my-refs': Refs
   }
 }

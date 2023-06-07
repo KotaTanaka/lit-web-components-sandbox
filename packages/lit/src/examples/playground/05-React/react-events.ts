@@ -1,7 +1,7 @@
 import { html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
-@customElement('react-events')
+@customElement('my-react-events')
 export class ReactEvents extends LitElement {
   @property({ type: Number }) count = 0;
 
@@ -14,6 +14,6 @@ export class ReactEvents extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'react-events': ReactEvents
+    'my-react-events': ReactEvents
   }
 }

@@ -4,7 +4,7 @@ import { Refs as RefsWC } from '@kotice/lit-web-components-sandbox';
 
 export const Refs = createComponent({
   react: React,
-  tagName: 'refs',
+  tagName: 'my-refs',
   elementClass: RefsWC,
   events: { onPlayingChange: 'playing-change' },
 });

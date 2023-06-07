@@ -18,7 +18,7 @@ function randomBucket<T>(messages: T[]): T {
   return messages[last];
 }
 
-@customElement('custom-events')
+@customElement('my-custom-events')
 export class CustomEvents extends LitElement {
   render() {
     return html`
@@ -38,6 +38,6 @@ export class CustomEvents extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'custom-events': CustomEvents
+    'my-custom-events': CustomEvents
   }
 }

@@ -17,7 +17,7 @@ const styles = css`
   }
 `;
 
-@customElement('slots')
+@customElement('my-slots')
 export class Slots extends LitElement {
   static styles = styles;
   @property({ type: Number }) count = 0;
@@ -36,6 +36,6 @@ export class Slots extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'slots': Slots
+    'my-slots': Slots
   }
 }
