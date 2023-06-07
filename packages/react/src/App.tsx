@@ -24,25 +24,37 @@ const App = () => {
       <h2 className="heading">🌏 Components</h2>
       <MySearchInput />
       <h2 className="heading">Lit Playground</h2>
-      <div>
-        <p>Basic</p>
-        <BasicsSample />
-      </div>
-      <div>
-        <p>React events</p>
-        <ReactEventsSample />
-      </div>
-      <div>
-        <p>Custom events</p>
-        <CustomEventsSample />
-      </div>
-      <div>
-        <p>Slots</p>
-        <SlotsSample />
-      </div>
-      <div>
-        <p>Refs</p>
-        <RefsSample />
+      <div className="playground">
+        <div className="container">
+          <p className="label">Basic</p>
+          <div className="content">
+            <BasicsSample />
+          </div>
+        </div>
+        <div className="container">
+          <p className="label">React events</p>
+          <div className="content">
+            <ReactEventsSample />
+          </div>
+        </div>
+        <div className="container">
+          <p className="label">Custom events</p>
+          <div className="content">
+            <CustomEventsSample />
+          </div>
+        </div>
+        <div className="container">
+          <p className="label">Slots</p>
+          <div className="content">
+            <SlotsSample />
+          </div>
+        </div>
+        <div className="container">
+          <p className="label">Refs</p>
+          <div className="content">
+            <RefsSample />
+          </div>
+        </div>
       </div>
     </div>
   )

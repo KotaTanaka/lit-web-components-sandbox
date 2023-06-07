@@ -27,6 +27,28 @@
   border-bottom: thin solid #ccc;
 }
 
+.playground {
+  color: #242424;
+  background-color: rgba(255, 255, 255, 0.87);
+  padding: 8px 0;
+}
+
+.container {
+  min-height: 64px;
+  margin: 0 8px 16px;
+}
+
+.label {
+  padding: 4px;
+  color: #000;
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.content {
+  padding: 8px;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
