@@ -3,11 +3,11 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 import { MySearchInput } from './components/MySearchInput'
-import { BasicsSample } from './examples/playground/06-React/Basics/BasicsSample'
-import { ReactEventsSample } from './examples/playground/06-React/ReactEvents/ReactEventsSample'
-import { CustomEventsSample } from './examples/playground/06-React/CustomEvents/CustomEventsSample'
-import { SlotsSample } from './examples/playground/06-React/Slots/SlotsSample'
-import { RefsSample } from './examples/playground/06-React/Refs/RefsSample'
+import { BasicsSample } from './examples/playground/05-React/Basics/BasicsSample'
+import { ReactEventsSample } from './examples/playground/05-React/ReactEvents/ReactEventsSample'
+import { CustomEventsSample } from './examples/playground/05-React/CustomEvents/CustomEventsSample'
+import { SlotsSample } from './examples/playground/05-React/Slots/SlotsSample'
+import { RefsSample } from './examples/playground/05-React/Refs/RefsSample'
 
 const App = () => {
   return (
