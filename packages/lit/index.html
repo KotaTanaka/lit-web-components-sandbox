@@ -8,10 +8,18 @@
     <link rel="stylesheet" href="./src/assets/globals.css" />
     <script type="module" src="/src/my-app.ts"></script>
     <script type="module" src="/src/components/my-search-input.ts"></script>
+    <script type="module" src="/src/components/drag-and-drop/my-draggable-list.ts"></script>
+    <script type="module" src="/src/components/drag-and-drop/my-draggable-item.ts"></script>
   </head>
   <body>
     <my-app>
       <my-search-input></my-search-input>
+      <my-draggable-list>
+        <my-draggable-item>Item 1</my-draggable-item>
+        <my-draggable-item>Item 2</my-draggable-item>
+        <my-draggable-item>Item 3</my-draggable-item>
+        <my-draggable-item>Item 4</my-draggable-item>
+      </my-draggable-list>
     </my-app>
   </body>
 </html>
