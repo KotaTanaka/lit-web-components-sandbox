@@ -16,9 +16,6 @@ export class MySearchInput extends LitElement {
   static styles = css`
     :host {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 8px;
     }
 
     .search {
@@ -35,6 +32,7 @@ export class MySearchInput extends LitElement {
     .submit {
       height: 24px;
       min-width: 64px;
+      margin-left: 8px;
       background: #000;
       border: #000;
       border-radius: 2px;

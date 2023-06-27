@@ -69,10 +69,11 @@ export class MyDraggableItem extends LitElement {
     :host {
       display: flex;
       width: fit-content;
+      color: #222;
     }
 
     :host(.over) {
-      border-top: 2px solid white;
+      border-top: 2px solid black;
     }
 
     :host(.draggable) {
@@ -81,14 +82,14 @@ export class MyDraggableItem extends LitElement {
     }
 
     .draggable-item {
-      cursor: pointer;
+      cursor: grab;
       display: flex;
       align-items: center;
       width: 240px;
       height: 48px;
       padding: 8px 16px;
       border-radius: 6px;
-      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+      box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
     }
   `;
 }

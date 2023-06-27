@@ -24,7 +24,13 @@ export class MyDraggableList extends LitElement {
     return html`<slot></slot>`;
   }
 
-  static styles = css``;
+  static styles = css`
+    :host {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+  `;
 }
 
 declare global {
