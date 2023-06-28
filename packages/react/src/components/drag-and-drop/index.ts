@@ -1,4 +1,4 @@
-import { MyDraggableArea } from './MyDraggableArea';
-import { MyDraggableItem } from './MyDraggableItem';
+import { MyDragItem } from './MyDragItem';
+import { MyDropArea } from './MyDropArea';
 
-export { MyDraggableArea, MyDraggableItem };
+export { MyDragItem, MyDropArea };

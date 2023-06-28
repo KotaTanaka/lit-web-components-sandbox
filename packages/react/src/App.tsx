@@ -2,7 +2,7 @@ import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
 
-import { MySearchInput, MyDraggableArea, MyDraggableItem } from './components';
+import { MySearchInput, MyDragItem, MyDropArea } from './components';
 import { BasicsSample } from './examples/playground/05-React/Basics/BasicsSample';
 import { ReactEventsSample } from './examples/playground/05-React/ReactEvents/ReactEventsSample';
 import { CustomEventsSample } from './examples/playground/05-React/CustomEvents/CustomEventsSample';
@@ -30,14 +30,14 @@ const App = () => {
           </div>
         </div>
         <div className="container">
-          <p className="label">MyDraggableArea / MyDraggableItem</p>
+          <p className="label">MyDropArea / MyDragItem</p>
           <div className="content">
-            <MyDraggableArea>
-              <MyDraggableItem>Item 1</MyDraggableItem>
-              <MyDraggableItem>Item 2</MyDraggableItem>
-              <MyDraggableItem>Item 3</MyDraggableItem>
-              <MyDraggableItem>Item 4</MyDraggableItem>
-            </MyDraggableArea>
+            <MyDropArea>
+              <MyDragItem>Item 1</MyDragItem>
+              <MyDragItem>Item 2</MyDragItem>
+              <MyDragItem>Item 3</MyDragItem>
+              <MyDragItem>Item 4</MyDragItem>
+            </MyDropArea>
           </div>
         </div>
       </div>
