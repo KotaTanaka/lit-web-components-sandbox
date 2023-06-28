@@ -19,7 +19,7 @@ export class MyApp extends LitElement {
       <h2 class="heading">🌏 Components</h2>
       <a href="examples.html">Examples</a>
       <slot></slot>
-    `
+    `;
   }
 
   static styles = css`
@@ -64,7 +64,7 @@ export class MyApp extends LitElement {
     a {
       color: #fff;
     }
-  `
+  `;
 }
 
 declare global {

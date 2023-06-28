@@ -1,8 +1,8 @@
 import { LitElement, css, html } from 'lit';
 import { customElement } from 'lit/decorators.js';
 
-@customElement('my-draggable-area')
-export class MyDraggableArea extends LitElement {
+@customElement('my-drop-area')
+export class MyDropArea extends LitElement {
   connectedCallback() {
     super.connectedCallback();
     this.addEventListener('drop', this.drop);
@@ -36,6 +36,6 @@ export class MyDraggableArea extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'my-draggable-area': MyDraggableArea
+    'my-drop-area': MyDropArea
   }
 }

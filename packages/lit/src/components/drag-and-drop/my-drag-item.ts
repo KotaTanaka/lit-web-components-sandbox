@@ -2,8 +2,8 @@ import { LitElement, css, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { generateRandomId } from './utils';
 
-@customElement('my-draggable-item')
-export class MyDraggableItem extends LitElement {
+@customElement('my-drag-item')
+export class MyDragItem extends LitElement {
   @property()
   id = generateRandomId();
 
@@ -97,6 +97,6 @@ export class MyDraggableItem extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'my-draggable-item': MyDraggableItem
+    'my-drag-item': MyDragItem
   }
 }

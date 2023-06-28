@@ -44,7 +44,7 @@ export class MySearchInput extends LitElement {
         cursor: pointer;
       }
     }
-  `
+  `;
 }
 
 declare global {
