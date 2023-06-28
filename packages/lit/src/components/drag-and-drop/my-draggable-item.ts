@@ -1,9 +1,10 @@
-import { LitElement, css, html } from 'lit'
-import { customElement } from 'lit/decorators.js'
+import { LitElement, css, html } from 'lit';
+import { customElement, property } from 'lit/decorators.js';
 import { generateRandomId } from './utils';
 
 @customElement('my-draggable-item')
 export class MyDraggableItem extends LitElement {
+  @property()
   id = generateRandomId();
 
   connectedCallback() {
@@ -15,8 +16,8 @@ export class MyDraggableItem extends LitElement {
     this.addEventListener('dragend', this.dragEnd);
 
     this.setAttribute('draggable-id', this.id);
-    this.classList.add('draggable');
     this.setAttribute('draggable', 'true');
+    this.classList.add('draggable');
   }
 
   dragStart(e: DragEvent) {

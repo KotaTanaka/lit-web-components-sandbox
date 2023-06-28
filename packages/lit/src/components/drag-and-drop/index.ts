@@ -1,2 +1,4 @@
-export { MyDraggableList } from './my-draggable-list';
-export { MyDraggableItem } from './my-draggable-item';
+import { MyDraggableArea } from './my-draggable-area';
+import { MyDraggableItem } from './my-draggable-item';
+
+export { MyDraggableArea, MyDraggableItem };

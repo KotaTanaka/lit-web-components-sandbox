@@ -1,5 +1,5 @@
-import { LitElement, css, html } from 'lit'
-import { customElement, property } from 'lit/decorators.js'
+import { LitElement, css, html } from 'lit';
+import { customElement, property } from 'lit/decorators.js';
 
 @customElement('my-search-input')
 export class MySearchInput extends LitElement {
@@ -10,7 +10,7 @@ export class MySearchInput extends LitElement {
     return html`
       <input class="search" type="search" placeholder="${this.placeholder}">
       <input class="submit" type="submit" value="検索">
-    `
+    `;
   }
 
   static styles = css`
