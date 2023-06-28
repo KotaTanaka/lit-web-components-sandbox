@@ -6,4 +6,4 @@ export const MySearchInput = createComponent({
   tagName: 'my-search-input',
   elementClass: MySearchInputWC,
   react: React,
-})
+});

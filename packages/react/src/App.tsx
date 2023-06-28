@@ -1,13 +1,13 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import reactLogo from './assets/react.svg';
+import viteLogo from '/vite.svg';
+import './App.css';
 
-import { MySearchInput } from './components/MySearchInput'
-import { BasicsSample } from './examples/playground/05-React/Basics/BasicsSample'
-import { ReactEventsSample } from './examples/playground/05-React/ReactEvents/ReactEventsSample'
-import { CustomEventsSample } from './examples/playground/05-React/CustomEvents/CustomEventsSample'
-import { SlotsSample } from './examples/playground/05-React/Slots/SlotsSample'
-import { RefsSample } from './examples/playground/05-React/Refs/RefsSample'
+import { MySearchInput, MyDraggableArea, MyDraggableItem } from './components';
+import { BasicsSample } from './examples/playground/05-React/Basics/BasicsSample';
+import { ReactEventsSample } from './examples/playground/05-React/ReactEvents/ReactEventsSample';
+import { CustomEventsSample } from './examples/playground/05-React/CustomEvents/CustomEventsSample';
+import { SlotsSample } from './examples/playground/05-React/Slots/SlotsSample';
+import { RefsSample } from './examples/playground/05-React/Refs/RefsSample';
 
 const App = () => {
   return (
@@ -22,7 +22,25 @@ const App = () => {
         </a>
       </div>
       <h2 className="heading">🌏 Components</h2>
-      <MySearchInput />
+      <div className="playground">
+        <div className="container">
+          <p className="label">MySearchInput</p>
+          <div className="content">
+            <MySearchInput />
+          </div>
+        </div>
+        <div className="container">
+          <p className="label">MyDraggableArea / MyDraggableItem</p>
+          <div className="content">
+            <MyDraggableArea>
+              <MyDraggableItem>Item 1</MyDraggableItem>
+              <MyDraggableItem>Item 2</MyDraggableItem>
+              <MyDraggableItem>Item 3</MyDraggableItem>
+              <MyDraggableItem>Item 4</MyDraggableItem>
+            </MyDraggableArea>
+          </div>
+        </div>
+      </div>
       <h2 className="heading">Lit Playground</h2>
       <div className="playground">
         <div className="container">
@@ -57,7 +75,7 @@ const App = () => {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
