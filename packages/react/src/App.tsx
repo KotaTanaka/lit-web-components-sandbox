@@ -1,13 +1,13 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import reactLogo from './assets/react.svg';
+import viteLogo from '/vite.svg';
+import './App.css';
 
-import { MySearchInput } from './components/MySearchInput'
-import { BasicsSample } from './examples/playground/05-React/Basics/BasicsSample'
-import { ReactEventsSample } from './examples/playground/05-React/ReactEvents/ReactEventsSample'
-import { CustomEventsSample } from './examples/playground/05-React/CustomEvents/CustomEventsSample'
-import { SlotsSample } from './examples/playground/05-React/Slots/SlotsSample'
-import { RefsSample } from './examples/playground/05-React/Refs/RefsSample'
+import { MySearchInput, MyDragItem, MyDropArea } from './components';
+import { BasicsSample } from './examples/playground/05-React/Basics/BasicsSample';
+import { ReactEventsSample } from './examples/playground/05-React/ReactEvents/ReactEventsSample';
+import { CustomEventsSample } from './examples/playground/05-React/CustomEvents/CustomEventsSample';
+import { SlotsSample } from './examples/playground/05-React/Slots/SlotsSample';
+import { RefsSample } from './examples/playground/05-React/Refs/RefsSample';
 
 const App = () => {
   return (
@@ -22,7 +22,25 @@ const App = () => {
         </a>
       </div>
       <h2 className="heading">🌏 Components</h2>
-      <MySearchInput />
+      <div className="playground">
+        <div className="container">
+          <p className="label">MySearchInput</p>
+          <div className="content">
+            <MySearchInput />
+          </div>
+        </div>
+        <div className="container">
+          <p className="label">MyDropArea / MyDragItem</p>
+          <div className="content">
+            <MyDropArea>
+              <MyDragItem>Item 1</MyDragItem>
+              <MyDragItem>Item 2</MyDragItem>
+              <MyDragItem>Item 3</MyDragItem>
+              <MyDragItem>Item 4</MyDragItem>
+            </MyDropArea>
+          </div>
+        </div>
+      </div>
       <h2 className="heading">Lit Playground</h2>
       <div className="playground">
         <div className="container">
@@ -57,7 +75,7 @@ const App = () => {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

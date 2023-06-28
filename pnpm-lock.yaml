@@ -1,11 +1,18 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 importers:
 
   .: {}
 
   packages/client:
     dependencies:
+      '@kotice/lit-web-components-sandbox-react':
+        specifier: ^0.0.0
+        version: link:../react
       '@types/node':
         specifier: 18.16.3
         version: 18.16.3

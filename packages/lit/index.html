@@ -7,19 +7,25 @@
     <title>@kotice/lit-web-components-sandbox</title>
     <link rel="stylesheet" href="./src/assets/globals.css" />
     <script type="module" src="/src/my-app.ts"></script>
-    <script type="module" src="/src/components/my-search-input.ts"></script>
-    <script type="module" src="/src/components/drag-and-drop/my-draggable-list.ts"></script>
-    <script type="module" src="/src/components/drag-and-drop/my-draggable-item.ts"></script>
+    <script type="module" src="/src/components/search-input/my-search-input.ts"></script>
+    <script type="module" src="/src/components/drag-and-drop/my-drag-item.ts"></script>
+    <script type="module" src="/src/components/drag-and-drop/my-drop-area.ts"></script>
   </head>
   <body>
     <my-app>
-      <my-search-input></my-search-input>
-      <my-draggable-list>
-        <my-draggable-item>Item 1</my-draggable-item>
-        <my-draggable-item>Item 2</my-draggable-item>
-        <my-draggable-item>Item 3</my-draggable-item>
-        <my-draggable-item>Item 4</my-draggable-item>
-      </my-draggable-list>
+      <h3>🔍 Search Input</h3>
+      <div class="container">
+        <my-search-input></my-search-input>
+      </div>
+      <h3>💊 Simple Drag & Drop</h3>
+      <div class="container">
+        <my-drop-area>
+          <my-drag-item>Item 1</my-drag-item>
+          <my-drag-item>Item 2</my-drag-item>
+          <my-drag-item>Item 3</my-drag-item>
+          <my-drag-item>Item 4</my-drag-item>
+        </my-drop-area>
+      </div>
     </my-app>
   </body>
 </html>

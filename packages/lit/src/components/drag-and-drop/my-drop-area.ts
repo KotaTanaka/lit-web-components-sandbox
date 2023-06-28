@@ -1,8 +1,8 @@
 import { LitElement, css, html } from 'lit';
 import { customElement } from 'lit/decorators.js';
 
-@customElement('my-draggable-list')
-export class MyDraggableList extends LitElement {
+@customElement('my-drop-area')
+export class MyDropArea extends LitElement {
   connectedCallback() {
     super.connectedCallback();
     this.addEventListener('drop', this.drop);
@@ -13,7 +13,7 @@ export class MyDraggableList extends LitElement {
   
     e.target?.classList.remove('over');
     const draggingElementId = e.dataTransfer?.getData('text/plain');
-    const draggingElement = this.querySelector(`[draggable-id="${draggingElementId}"]`);
+    const draggingElement = document.querySelector(`[draggable-id="${draggingElementId}"]`);
 
     if (draggingElement) {
       e.target.parentElement?.insertBefore<Element>(draggingElement, e.target);
@@ -24,11 +24,18 @@ export class MyDraggableList extends LitElement {
     return html`<slot></slot>`;
   }
 
-  static styles = css``;
+  static styles = css`
+    :host {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      color: black;
+    }
+  `;
 }
 
 declare global {
   interface HTMLElementTagNameMap {
-    'my-draggable-list': MyDraggableList
+    'my-drop-area': MyDropArea
   }
 }

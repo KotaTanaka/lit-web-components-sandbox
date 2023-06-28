@@ -1,2 +1,2 @@
-export { MySearchInput } from './my-search-input';
-export { MyDraggableList, MyDraggableItem } from './drag-and-drop'
+export * from './search-input';
+export * from './drag-and-drop';

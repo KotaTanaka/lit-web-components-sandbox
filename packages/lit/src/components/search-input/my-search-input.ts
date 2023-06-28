@@ -1,5 +1,5 @@
-import { LitElement, css, html } from 'lit'
-import { customElement, property } from 'lit/decorators.js'
+import { LitElement, css, html } from 'lit';
+import { customElement, property } from 'lit/decorators.js';
 
 @customElement('my-search-input')
 export class MySearchInput extends LitElement {
@@ -10,15 +10,12 @@ export class MySearchInput extends LitElement {
     return html`
       <input class="search" type="search" placeholder="${this.placeholder}">
       <input class="submit" type="submit" value="検索">
-    `
+    `;
   }
 
   static styles = css`
     :host {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 8px;
     }
 
     .search {
@@ -35,6 +32,7 @@ export class MySearchInput extends LitElement {
     .submit {
       height: 24px;
       min-width: 64px;
+      margin-left: 8px;
       background: #000;
       border: #000;
       border-radius: 2px;
@@ -46,7 +44,7 @@ export class MySearchInput extends LitElement {
         cursor: pointer;
       }
     }
-  `
+  `;
 }
 
 declare global {
