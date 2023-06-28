@@ -1,26 +1,26 @@
 import type { NextPage } from 'next';
 import dynamic from 'next/dynamic';
 
-const DraggableArea = dynamic(() => import('@/components/DraggableArea'), { ssr: false });
-const DraggableItem = dynamic(() => import('@/components/DraggableItem'), { ssr: false });
+const DragItem = dynamic(() => import('@/components/DragItem'), { ssr: false });
+const DropArea = dynamic(() => import('@/components/DropArea'), { ssr: false });
 
 const DnDPage: NextPage = () => {
   return (
     <div className="flex gap-[16px] p-[16px]">
       <div className="border p-[16px]">
-        <DraggableArea>
-          <DraggableItem>Item 1</DraggableItem>
-          <DraggableItem>Item 2</DraggableItem>
-          <DraggableItem>Item 3</DraggableItem>
-          <DraggableItem>Item 4</DraggableItem>
-        </DraggableArea>
+        <DropArea>
+          <DragItem>Item 1</DragItem>
+          <DragItem>Item 2</DragItem>
+          <DragItem>Item 3</DragItem>
+          <DragItem>Item 4</DragItem>
+        </DropArea>
       </div>
       <div className="border p-[16px]">
-        <DraggableArea>
-          <DraggableItem>Item 5</DraggableItem>
-          <DraggableItem>Item 6</DraggableItem>
-          <DraggableItem>Item 7</DraggableItem>
-        </DraggableArea>
+        <DropArea>
+          <DragItem>Item 5</DragItem>
+          <DragItem>Item 6</DragItem>
+          <DragItem>Item 7</DragItem>
+        </DropArea>
       </div>
     </div>
   );
