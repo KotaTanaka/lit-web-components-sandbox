@@ -29,6 +29,7 @@ export class MyDropArea extends LitElement {
       // 別のエリアにDropする場合は既存の要素を元に新規作成する
       const newElement = e.target.cloneNode(true);
       newElement.textContent = draggingElement.textContent;
+      draggingElement.remove();
       e.target.parentElement?.insertBefore(newElement, isDraggedBottom ? e.target : e.target.nextSibling);
     }
   }
