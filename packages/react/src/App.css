@@ -46,10 +46,24 @@
 }
 
 .content {
+  display: flex;
+  gap: 16px;
   padding: 8px;
 }
 
-.card {
+.dnd-box {
+  flex: 1;
+  padding: 16px;
+  border: thin solid lightgrey;
+}
+
+.dnd-box-label {
+  text-align: center;
+  margin-bottom: 16px;
+  color: #222;
+}
+
+.dnd-card {
   display: flex;
   align-items: center;
   width: 240px;

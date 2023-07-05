@@ -19,12 +19,24 @@
       </div>
       <h3>💊 Simple Drag & Drop</h3>
       <div class="container">
-        <my-drop-area>
-          <my-drag-item class="card">Item 1</my-drag-item>
-          <my-drag-item class="card">Item 2</my-drag-item>
-          <my-drag-item class="card">Item 3</my-drag-item>
-          <my-drag-item class="card">Item 4</my-drag-item>
-        </my-drop-area>
+        <div class="dnd-box">
+          <p class="dnd-box-label">Box A</p>
+          <my-drop-area>
+            <my-drag-item class="dnd-card">Item 1</my-drag-item>
+            <my-drag-item class="dnd-card">Item 2</my-drag-item>
+            <my-drag-item class="dnd-card">Item 3</my-drag-item>
+            <my-drag-item class="dnd-card">Item 4</my-drag-item>
+          </my-drop-area>
+        </div>
+        <div class="dnd-box">
+          <p  class="dnd-box-label">Box B</p>
+          <my-drop-area>
+            <my-drag-item class="dnd-card">Item 5</my-drag-item>
+            <my-drag-item class="dnd-card">Item 6</my-drag-item>
+            <my-drag-item class="dnd-card">Item 7</my-drag-item>
+            <my-drag-item class="dnd-card">Item 8</my-drag-item>
+          </my-drop-area>
+        </div>
       </div>
     </my-app>
   </body>

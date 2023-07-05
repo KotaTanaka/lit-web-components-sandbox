@@ -14,13 +14,27 @@ h1, h2, p {
 }
 
 .container {
+  display: flex;
+  gap: 16px;
   background: white;
   padding: 20px;
   border: 2px solid gray;
   border-radius: 4px;
 }
 
-.card {
+.dnd-box {
+  flex: 1;
+  padding: 16px;
+  border: thin solid lightgrey;
+}
+
+.dnd-box-label {
+  text-align: center;
+  margin-bottom: 16px;
+  color: #222;
+}
+
+.dnd-card {
   display: flex;
   align-items: center;
   width: 240px;
