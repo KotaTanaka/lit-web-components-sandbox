@@ -13,14 +13,6 @@ const App = () => {
   return (
     <div className="App">
       <h1>@kotice/lit-web-components-sandbox-react</h1>
-      <div className="logo-list">
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
       <h2 className="heading">🌏 Components</h2>
       <div className="playground">
         <div className="container">
@@ -32,12 +24,24 @@ const App = () => {
         <div className="container">
           <p className="label">MyDropArea / MyDragItem</p>
           <div className="content">
-            <MyDropArea>
-              <MyDragItem>Item 1</MyDragItem>
-              <MyDragItem>Item 2</MyDragItem>
-              <MyDragItem>Item 3</MyDragItem>
-              <MyDragItem>Item 4</MyDragItem>
-            </MyDropArea>
+            <div className="dnd-box">
+              <p className="dnd-box-label">Box A</p>
+              <MyDropArea>
+                <MyDragItem className="dnd-card dnd-card-large">Item 1</MyDragItem>
+                <MyDragItem className="dnd-card dnd-card-large">Item 2</MyDragItem>
+                <MyDragItem className="dnd-card dnd-card-large">Item 3</MyDragItem>
+                <MyDragItem className="dnd-card dnd-card-large">Item 4</MyDragItem>
+              </MyDropArea>
+            </div>
+            <div className="dnd-box">
+              <p className="dnd-box-label">Box B</p>
+              <MyDropArea>
+                <MyDragItem className="dnd-card">Item 5</MyDragItem>
+                <MyDragItem className="dnd-card">Item 6</MyDragItem>
+                <MyDragItem className="dnd-card">Item 7</MyDragItem>
+                <MyDragItem className="dnd-card">Item 8</MyDragItem>
+              </MyDropArea>
+            </div>
           </div>
         </div>
       </div>

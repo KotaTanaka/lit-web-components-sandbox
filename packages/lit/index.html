@@ -2,7 +2,6 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@kotice/lit-web-components-sandbox</title>
     <link rel="stylesheet" href="./src/assets/globals.css" />
@@ -19,12 +18,24 @@
       </div>
       <h3>💊 Simple Drag & Drop</h3>
       <div class="container">
-        <my-drop-area>
-          <my-drag-item>Item 1</my-drag-item>
-          <my-drag-item>Item 2</my-drag-item>
-          <my-drag-item>Item 3</my-drag-item>
-          <my-drag-item>Item 4</my-drag-item>
-        </my-drop-area>
+        <div class="dnd-box">
+          <p class="dnd-box-label">Box A</p>
+          <my-drop-area>
+            <my-drag-item class="dnd-card dnd-card-large">Item 1</my-drag-item>
+            <my-drag-item class="dnd-card dnd-card-large">Item 2</my-drag-item>
+            <my-drag-item class="dnd-card dnd-card-large">Item 3</my-drag-item>
+            <my-drag-item class="dnd-card dnd-card-large">Item 4</my-drag-item>
+          </my-drop-area>
+        </div>
+        <div class="dnd-box">
+          <p class="dnd-box-label">Box B</p>
+          <my-drop-area>
+            <my-drag-item class="dnd-card">Item 5</my-drag-item>
+            <my-drag-item class="dnd-card">Item 6</my-drag-item>
+            <my-drag-item class="dnd-card">Item 7</my-drag-item>
+            <my-drag-item class="dnd-card">Item 8</my-drag-item>
+          </my-drop-area>
+        </div>
       </div>
     </my-app>
   </body>

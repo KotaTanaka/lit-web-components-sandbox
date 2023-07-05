@@ -10,26 +10,41 @@ export class MyDropArea extends LitElement {
 
   drop (e: DragEvent) {
     if (!(e.target instanceof HTMLElement)) return;
-  
-    e.target?.classList.remove('over');
+
+    e.target.classList.remove('over');
+    e.target.classList.remove('over-bottom');
+
     const draggingElementId = e.dataTransfer?.getData('text/plain');
     const draggingElement = document.querySelector(`[draggable-id="${draggingElementId}"]`);
+    if (!draggingElement) {
+      return
+    }
 
-    if (draggingElement) {
-      e.target.parentElement?.insertBefore<Element>(draggingElement, e.target);
+    const isDraggedBottom = e.offsetY < e.target.clientHeight / 2;
+
+    if (e.target.parentElement === draggingElement.parentElement) {
+      // 同じエリア内でのD&Dの場合は順番の入れ替え
+      e.target.parentElement?.insertBefore(draggingElement, isDraggedBottom ? e.target : e.target.nextSibling);
+    } else {
+      // 別のエリアにDropする場合は既存の要素を元に新規作成する
+      const newElement = e.target.cloneNode(true);
+      newElement.textContent = draggingElement.textContent;
+      draggingElement.remove();
+      e.target.parentElement?.insertBefore(newElement, isDraggedBottom ? e.target : e.target.nextSibling);
     }
   }
 
   render() {
-    return html`<slot></slot>`;
+    return html`
+      <slot></slot>
+      <div class="for-insert-after-last-item"></div>
+    `;
   }
 
   static styles = css`
     :host {
       display: flex;
       flex-direction: column;
-      gap: 8px;
-      color: black;
     }
   `;
 }
