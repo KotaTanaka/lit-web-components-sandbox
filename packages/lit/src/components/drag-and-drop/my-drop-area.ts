@@ -11,8 +11,8 @@ export class MyDropArea extends LitElement {
   drop (e: DragEvent) {
     if (!(e.target instanceof HTMLElement)) return;
 
-    e.target?.classList.remove('over');
-    e.target?.classList.remove('over-bottom');
+    e.target.classList.remove('over');
+    e.target.classList.remove('over-bottom');
 
     const draggingElementId = e.dataTransfer?.getData('text/plain');
     const draggingElement = document.querySelector(`[draggable-id="${draggingElementId}"]`);
@@ -20,10 +20,16 @@ export class MyDropArea extends LitElement {
       return
     }
 
-    if (e.offsetY < e.target.clientHeight / 2) {
-      e.target.parentElement?.insertBefore<Element>(draggingElement, e.target);
+    const isDraggedBottom = e.offsetY < e.target.clientHeight / 2;
+
+    if (e.target.parentElement === draggingElement.parentElement) {
+      // 同じエリア内でのD&Dの場合は順番の入れ替え
+      e.target.parentElement?.insertBefore(draggingElement, isDraggedBottom ? e.target : e.target.nextSibling);
     } else {
-      e.target.parentElement?.insertBefore<Element>(draggingElement, e.target.nextSibling);
+      // 別のエリアにDropする場合は既存の要素を元に新規作成する
+      const newElement = e.target.cloneNode(true);
+      newElement.textContent = draggingElement.textContent;
+      e.target.parentElement?.insertBefore(newElement, isDraggedBottom ? e.target : e.target.nextSibling);
     }
   }
 
