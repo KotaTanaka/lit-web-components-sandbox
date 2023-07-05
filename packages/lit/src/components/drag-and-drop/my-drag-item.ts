@@ -26,14 +26,12 @@ export class MyDragItem extends LitElement {
     this.style.opacity = '0.4';
     e.dataTransfer.setData('text/plain', this.id);
     e.dataTransfer.effectAllowed = 'move';
-    e.target.classList.add('over');
   }
 
   dragEnter(e: DragEvent) {
     if (!(e.target instanceof HTMLElement)) return;
 
     e.preventDefault();
-    e.target.classList.add('over');
   }
 
   dragOver(e: DragEvent) {
@@ -41,6 +39,15 @@ export class MyDragItem extends LitElement {
 
     e.preventDefault();
     e.dataTransfer.dropEffect = 'move';
+
+    if (e.offsetY < e.target.clientHeight / 2) {
+      e.target.classList.remove('over-bottom');
+      e.target.classList.add('over');
+    } else {
+      e.target.classList.remove('over');
+      e.target.classList.add('over-bottom');
+    }
+
     return false;
   }
 
@@ -49,6 +56,7 @@ export class MyDragItem extends LitElement {
 
     e.stopPropagation();
     e.target.classList.remove('over');
+    e.target.classList.remove('over-bottom');
   }
 
   dragEnd(e: DragEvent) {
@@ -56,6 +64,7 @@ export class MyDragItem extends LitElement {
 
     this.style.opacity = '1';
     e.target.classList.remove('over');
+    e.target.classList.remove('over-bottom');
   }
 
   render() {
@@ -70,11 +79,14 @@ export class MyDragItem extends LitElement {
     :host {
       display: flex;
       width: fit-content;
-      color: #222;
     }
 
     :host(.over) {
       border-top: 2px solid black;
+    }
+
+    :host(.over-bottom) {
+      border-bottom: 2px solid black;
     }
 
     :host(.draggable) {
@@ -84,13 +96,6 @@ export class MyDragItem extends LitElement {
 
     .draggable-item {
       cursor: grab;
-      display: flex;
-      align-items: center;
-      width: 240px;
-      height: 48px;
-      padding: 8px 16px;
-      border-radius: 6px;
-      box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
     }
   `;
 }
