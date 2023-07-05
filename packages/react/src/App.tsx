@@ -27,10 +27,10 @@ const App = () => {
             <div className="dnd-box">
               <p className="dnd-box-label">Box A</p>
               <MyDropArea>
-                <MyDragItem className="dnd-card">Item 1</MyDragItem>
-                <MyDragItem className="dnd-card">Item 2</MyDragItem>
-                <MyDragItem className="dnd-card">Item 3</MyDragItem>
-                <MyDragItem className="dnd-card">Item 4</MyDragItem>
+                <MyDragItem className="dnd-card dnd-card-large">Item 1</MyDragItem>
+                <MyDragItem className="dnd-card dnd-card-large">Item 2</MyDragItem>
+                <MyDragItem className="dnd-card dnd-card-large">Item 3</MyDragItem>
+                <MyDragItem className="dnd-card dnd-card-large">Item 4</MyDragItem>
               </MyDropArea>
             </div>
             <div className="dnd-box">
