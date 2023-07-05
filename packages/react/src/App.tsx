@@ -33,10 +33,10 @@ const App = () => {
           <p className="label">MyDropArea / MyDragItem</p>
           <div className="content">
             <MyDropArea>
-              <MyDragItem>Item 1</MyDragItem>
-              <MyDragItem>Item 2</MyDragItem>
-              <MyDragItem>Item 3</MyDragItem>
-              <MyDragItem>Item 4</MyDragItem>
+              <MyDragItem className="card">Item 1</MyDragItem>
+              <MyDragItem className="card">Item 2</MyDragItem>
+              <MyDragItem className="card">Item 3</MyDragItem>
+              <MyDragItem className="card">Item 4</MyDragItem>
             </MyDropArea>
           </div>
         </div>
