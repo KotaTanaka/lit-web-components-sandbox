@@ -1,7 +1,8 @@
 import { LitElement, css, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
+import { tagNameMap } from '../constants';
 
-@customElement('my-search-input')
+@customElement(tagNameMap.MySearchInput)
 export class MySearchInput extends LitElement {
   @property()
   placeholder = '入力してください';
@@ -49,6 +50,6 @@ export class MySearchInput extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'my-search-input': MySearchInput
+    [tagNameMap.MySearchInput]: MySearchInput
   }
 }

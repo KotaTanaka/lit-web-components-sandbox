@@ -1,7 +1,8 @@
 import { LitElement, css, html } from 'lit';
 import { customElement } from 'lit/decorators.js';
+import { tagNameMap } from '../constants';
 
-@customElement('my-drop-area')
+@customElement(tagNameMap.MyDropArea)
 export class MyDropArea extends LitElement {
   connectedCallback() {
     super.connectedCallback();
@@ -51,6 +52,6 @@ export class MyDropArea extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'my-drop-area': MyDropArea
+    [tagNameMap.MyDropArea]: MyDropArea
   }
 }

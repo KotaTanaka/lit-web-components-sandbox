@@ -1,8 +1,9 @@
 import { LitElement, css, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { generateRandomId } from './utils';
+import { tagNameMap } from '../constants';
 
-@customElement('my-drag-item')
+@customElement(tagNameMap.MyDragItem)
 export class MyDragItem extends LitElement {
   @property()
   id = generateRandomId();
@@ -102,6 +103,6 @@ export class MyDragItem extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'my-drag-item': MyDragItem
+    [tagNameMap.MyDragItem]: MyDragItem
   }
 }
