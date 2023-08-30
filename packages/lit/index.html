@@ -8,6 +8,8 @@
     <script type="module" src="/src/my-app.ts"></script>
     <script type="module" src="/src/components/search-input/my-search-input.ts"></script>
     <script type="module" src="/src/components/dropdown-select/my-dropdown-select.ts"></script>
+    <script type="module" src="/src/components/stack-list/my-stack-list.ts"></script>
+    <script type="module" src="/src/components/stack-list/my-stack-list-item.ts"></script>
     <script type="module" src="/src/components/drag-and-drop/my-drag-item.ts"></script>
     <script type="module" src="/src/components/drag-and-drop/my-drop-area.ts"></script>
   </head>
@@ -17,9 +19,19 @@
       <div class="container">
         <my-search-input></my-search-input>
       </div>
-      <h3>🔍 Pulldown Select</h3>
+      <h3>👓 Pulldown Select</h3>
       <div class="container">
         <my-dropdown-select></my-dropdown-select>
+      </div>
+      <h3>🗄️ Stack List & Item</h3>
+      <div class="container">
+        <my-stack-list>
+          <my-stack-list-item>検索結果1</my-stack-list-item>
+          <my-stack-list-item>検索結果2</my-stack-list-item>
+          <my-stack-list-item>検索結果3</my-stack-list-item>
+          <my-stack-list-item>検索結果4</my-stack-list-item>
+          <my-stack-list-item>検索結果5あああああああああああああああああああああああああああああああ</my-stack-list-item>
+        </my-stack-list>
       </div>
       <h3>💊 Simple Drag & Drop</h3>
       <div class="container">
