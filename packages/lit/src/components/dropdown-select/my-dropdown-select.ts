@@ -40,7 +40,7 @@ export class MyDropdownSelect extends LitElement {
 
   render() {
     return html`
-      <div class="select" @click="${this.toggle}">
+      <div class="${this.isOpen ? 'select select-opened' : 'select'}" @click="${this.toggle}">
         ${this.items.find((item) => item.value === this.value)?.label ?? html`<span class="placeholder">${this.placeholder}</span>`}
         <div class="${this.isOpen ? 'triangle-opened' : 'triangle'}"></div>
       </div>
@@ -72,13 +72,22 @@ export class MyDropdownSelect extends LitElement {
       align-items: center;
       justify-content: space-between;
       height: 24px;
-      min-width: 200px;
+      min-width: 240px;
       padding: 0 8px;
       background: #fff;
       border: 1px solid #ccc;
       border-radius: 2px;
+      box-sizing: border-box;
       color: #000;
       font-size: 12px;
+
+      &:hover {
+        background: #f7f7f7;
+      }
+    }
+
+    .select-opened {
+      background: #f7f7f7;
     }
 
     .triangle {
@@ -102,7 +111,7 @@ export class MyDropdownSelect extends LitElement {
       top: 28px;
       left: 0;
       width: 100%;
-      padding-bottom: 2px;
+      padding-bottom: 4px;
       background: #fff;
     }
 

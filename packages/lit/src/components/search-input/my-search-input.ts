@@ -28,6 +28,10 @@ export class MySearchInput extends LitElement {
       border-radius: 2px;
       color: #000;
       font-size: 12px;
+
+      &::placeholder {
+        color: #ccc;
+      }
     }
 
     .submit {

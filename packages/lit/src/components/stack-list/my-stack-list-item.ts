@@ -31,7 +31,6 @@ export class MyStackListItem extends LitElement {
       background: #fff;
       color: #666;
       font-size: 14px;
-      overflow: hidden;
 
       &:hover {
         background: #f7f7f7;
