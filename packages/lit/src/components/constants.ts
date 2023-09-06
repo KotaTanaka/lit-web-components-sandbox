@@ -4,6 +4,8 @@ export const tagNameMap = {
   MyStackList: 'my-stack-list',
   MyStackListItem: 'my-stack-list-item',
   MyTopicCard: 'my-topic-card',
+  MyTabContainerList: 'my-tab-container-list',
+  MyTabContainerItem: 'my-tab-container-item',
   MyDragItem: 'my-drag-item',
   MyDropArea: 'my-drop-area'
 } as const;
