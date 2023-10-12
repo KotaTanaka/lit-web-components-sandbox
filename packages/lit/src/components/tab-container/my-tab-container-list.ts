@@ -10,15 +10,11 @@ export type Tab = {
 
 @customElement(tagNameMap.MyTabContainerList)
 export class MyTabContainerList extends LitElement {
-  @property()
-  tabs: Tab[] = [
-    { name: 'tab-1', label: 'タブ1' },
-    { name: 'tab-2', label: 'タブ2' },
-    { name: 'tab-3', label: 'タブ3' }
-  ];
+  @property({ type: Array })
+  tabs: Tab[] = []
 
-  @property()
-  selectedTabName: string = this.tabs[0].name
+  @property({ type: String })
+  selectedTabName: string = this.tabs[0]?.name ?? ''
 
   onClickTab(tabName: string) {
     this.selectedTabName = tabName

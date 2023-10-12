@@ -20,11 +20,14 @@
     <my-app>
       <h3>🔍 Search Input</h3>
       <div class="container">
-        <my-search-input></my-search-input>
+        <my-search-input placeholder="入力してください"></my-search-input>
       </div>
       <h3>👓 Pulldown Select</h3>
       <div class="container">
-        <my-dropdown-select></my-dropdown-select>
+        <my-dropdown-select
+          placeholder="選択してください"
+          items='[{ "value": "1", "label": "項目1" },{ "value": "2", "label": "項目2" },{ "value": "3", "label": "項目3" }]'
+        ></my-dropdown-select>
       </div>
       <h3>🗄️ Stack List & Item</h3>
       <div class="container">
@@ -38,13 +41,13 @@
       </div>
       <h3>📰 Topic Card</h3>
       <div class="container">
-        <my-topic-card>
+        <my-topic-card date="2022/12/12 10:00">
           カタールW杯日本代表がスペインに劇的勝利
         </my-topic-card>
       </div>
-      <h3>📰 Tab Container</h3>
+      <h3>📂 Tab Container</h3>
       <div class="container">
-        <my-tab-container-list>
+        <my-tab-container-list tabs='[{ "name": "tab-1", "label": "タブ1" },{ "name": "tab-2", "label": "タブ2" },{ "name": "tab-3", "label": "タブ3" }]' selectedTabName="tab-1">
           <my-tab-container-item slot="tab-1">
             1️⃣これはタブ①です1️⃣
           </my-tab-container-item>

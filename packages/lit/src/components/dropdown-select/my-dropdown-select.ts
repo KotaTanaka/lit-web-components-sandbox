@@ -9,20 +9,16 @@ type SelectItem = {
 
 @customElement(tagNameMap.MyDropdownSelect)
 export class MyDropdownSelect extends LitElement {
-  @property()
-  placeholder = '選択してください';
+  @property({ type: String })
+  placeholder = '項目を選択...';
 
-  @property()
+  @property({ type: String })
   value: SelectItem['value'] = '';
 
-  @property()
-  items: SelectItem[] = [
-    { value: '1', label: '項目1' },
-    { value: '2', label: '項目2' },
-    { value: '3', label: '項目3' }
-  ];
+  @property({ type: Array })
+  items: SelectItem[] = [];
 
-  @property()
+  @property({ attribute: false })
   isOpen = false;
 
   connectedCallback() {

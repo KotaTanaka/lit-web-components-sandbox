@@ -4,8 +4,8 @@ import { tagNameMap } from '../constants';
 
 @customElement(tagNameMap.MySearchInput)
 export class MySearchInput extends LitElement {
-  @property()
-  placeholder = '入力してください';
+  @property({ type: String })
+  placeholder = 'テキストを入力...';
 
   render() {
     return html`

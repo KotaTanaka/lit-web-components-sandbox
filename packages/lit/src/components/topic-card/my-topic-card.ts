@@ -4,8 +4,8 @@ import { tagNameMap } from '../constants';
 
 @customElement(tagNameMap.MyTopicCard)
 export class MyTopicCard extends LitElement {
-  @property()
-  date = '2022/12/12 10:00';
+  @property({ type: String })
+  date: string = '';
 
   render() {
     return html`
